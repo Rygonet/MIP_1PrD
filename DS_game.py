@@ -1,3 +1,28 @@
+"""
+===============================================================
+ŠIS KODS:
+    Šis ir grafiskā lietotāja saskarnes (GUI) kods spēlei "Akmentu spēle", 
+    kas izstrādāta kā praktiskais darbs kursā "Mākslīgā intelekta pamati".
+    
+SPĒLES APRAKSTS UN NOTEIKUMI:
+    Spēles sākumā tiek uz galda novietots noteikts akmeņu skaits (no 50 līdz 70).
+    Spēlētāji (cilvēks un dators) veic gājienus pa kārtām. Katra gājiena laikā 
+    spēlētājs var paņemt vai nu 2, vai 3 akmeņus. Pēc akmeņu paņemšanas:
+        - Ja uz galda atlikušais akmeņu skaits ir pāra skaitlis, spēlētājam tiek 
+          pieskaitīti 2 punkti.
+        - Ja atlikušais akmeņu skaits ir nepāra, spēlētāja punktu skaitlis tiek samazināts par 2.
+    Spēle beidzas, kad uz galda ir mazāk par 2 akmeņiem (t.i., vairs nevar veikt gājienu).
+    Galīgo rezultātu aprēķina, saskaitot spēlētāja punktus un savākto akmeņu skaitu.
+    Uzvar tas spēlētājs, kuram galīgais rezultāts ir lielāks; ja rezultāti sakrīt, spēle ir neizšķirta.
+
+PRASĪBAS UZ PROJEKTU:
+    - Spēlei jābūt izstrādātai ar pilnvērtīgu grafisko lietotāja saskarni (nav komandrindas versijas).
+    - Jāizmanto datu struktūras, lai attēlotu spēles stāvokļus un (vai) spēles koku.
+    - Jāsavieno minimaks algoritms un tā uzlabotā versija – alfa-beta atgriešana, lai izvēlētos labāko gājienu.
+    - Projekta gaitā ir jāveic eksperimentāli mērījumi (piemēram, cik virsotņu tiek apmeklēts, cik ātri darbojas algoritms utt.).
+    - Komandas dalībniekiem ir jāspēj izskaidrot katru koda daļu.
+===============================================================
+"""
 # Importējam nepieciešamās bibliotēkas
 import tkinter as tk            # GUI izveidei (Grafiskā lietotāja saskarne)
 from tkinter import messagebox  # Logu ar kļūdu paziņojumiem attēlošanai
